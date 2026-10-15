@@ -1,0 +1,26 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Claude Project Downloader</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 13px -apple-system, system-ui, sans-serif; width: 360px; margin: 0; padding: 12px; }
+  h1 { font-size: 14px; margin: 0 0 8px; }
+  #org { width: 100%; margin-bottom: 8px; }
+  #list { max-height: 280px; overflow: auto; border: 1px solid #8884; border-radius: 6px; padding: 4px 8px; }
+  label { display: block; padding: 3px 0; }
+  .n { color: #888; }
+  .row { display: flex; gap: 8px; margin-top: 8px; align-items: center; }
+  button { padding: 6px 10px; }
+  #go { flex: 1; font-weight: 600; }
+  #status { margin-top: 8px; font-size: 12px; white-space: pre-wrap; max-height: 120px; overflow: auto; }
+  .err { color: #c33; }
+</style>
+<h1>Claude Project Downloader</h1>
+<select id="org" hidden></select>
+<div id="list">Loading projects…</div>
+<div class="row">
+  <button id="all">All</button><button id="none">None</button>
+  <button id="go" disabled>Download ZIP</button>
+</div>
+<div id="status"></div>
+<script type="module" src="popup.js"></script>

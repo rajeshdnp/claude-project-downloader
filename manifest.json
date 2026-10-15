@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Project Downloader (local)",
+  "version": "1.0.0",
+  "description": "Download the instructions, text knowledge and uploaded files of your claude.ai projects as a ZIP. Runs entirely in your browser; nothing is sent anywhere else.",
+  "action": { "default_popup": "popup.html", "default_title": "Download Claude projects" },
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://claude.ai/*"]
+}
